@@ -1,3 +1,4 @@
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +7,21 @@
   border: 0;
 }
 
-ul {
-  list-style: none;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: white;
 }
 
+ul {
+  list-style: none;
+}
+
+h2 {
+  padding: 20px 20px 40px 0;
+  font-size: 30px;
+}
+
+/* Encabezado */
 header {
   background-color: #3F9FD9;
   padding: 20px;
@@ -47,12 +54,14 @@ header nav ul li a {
   font-size: 18px;
 }
 
+/* Contenedor principal */
 #box {
   display: flex;
   justify-content: start;
   border: none;
 }
 
+/* Barra lateral izquierda */
 #railLeft {
   flex: 1;
   position: relative;
@@ -62,7 +71,7 @@ header nav ul li a {
   width: 300px;
 }
 
-.alertLeft{
+.alertLeft {
   background-color: #EDEBE1;
   padding: 20px;
   position: relative;
@@ -82,13 +91,7 @@ header nav ul li a {
   border: 1px #EDEDED solid;
 }
 
-.chNumber {
-  font-size: 35px;
-  font-weight: none;
-  color: #61646B;
-}
-
-#railLeft nav{
+#railLeft nav {
   background-color: #F5F5F5;
   padding: 20px;
   position: relative;
@@ -102,13 +105,13 @@ header nav ul li a {
   margin: 8px 0 8px 0;
 }
 
-#railLeft .great #recentMessageList{
+#railLeft .great #recentMessageList {
   width: 230px;
   background-color: white;
 }
 
 #railLeft .great #recentMessageList ul {
-  display:flex;
+  display: flex;
   margin: 100px;
 }
 
@@ -124,6 +127,15 @@ header nav ul li a {
   display: inline-block;
 }
 
+#railLeft .great h3 {
+  font-weight: bold;
+  color: black;
+  background-color: #B6D1F2;
+  padding: 15px;
+  width: 200px;
+}
+
+/* Contenedor del medio */
 #middle {
   flex: 3.2;
   margin: 0;
@@ -140,11 +152,6 @@ header nav ul li a {
   font-size: 18px;
 }
 
-h2 {
-  padding: 20px 20px 40px 0;
-  font-size: 30px;
-}
-
 #company, #clientInfo {
   display: inline-block;
   vertical-align: top;
@@ -153,7 +160,7 @@ h2 {
   justify-content: space-between;
 }
 
-#company h4, #clientInfo h4  {
+#company h4, #clientInfo h4 {
   font-size: 18px;
   margin-bottom: 25px;
 }
@@ -185,6 +192,7 @@ h2 {
   width: fit-content;
 }
 
+/* Barra lateral derecha */
 aside {
   flex: 1;
   position: relative;
@@ -194,12 +202,12 @@ aside {
   width: 400px;
 }
 
-#railLeft .great h3 {
-  font-weight: bold;
-  color: black;
-  background-color: #B6D1F2;
-  padding: 15px;
-  width: 200px;
+aside .great {
+  background-color: #F5F5F5;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  width: 234px;
+  border: 1px #EDEDED solid;
 }
 
 aside h3 {
@@ -210,16 +218,15 @@ aside h3 {
   width: 210px;
 }
 
-#chList{
+#chList {
   width: 240px;
   background-color: white;
 }
 
-#chList ul {
-  display:flex;
-}
-
-#chList li .chNumber {
+#chList .chNumber {
+  font-size: 35px;
+  font-weight: none;
+  color: #61646B;
   display: inline-block;
   width: 50px;
   text-align: right;
@@ -231,35 +238,10 @@ aside h3 {
   display: inline-block;
 }
 
-
-aside .great {
-  background-color: #F5F5F5;
-  padding: 30px 20px;
-  margin-bottom: 30px;
-  width: 234px;
-  border: 1px #EDEDED solid;
-}
-
-#sellList{
+#sellList {
   width: 230px;
   background-color: white;
   padding: 20px 0 20px 10px;
-}
-
-#chList ul {
-  display:flex;
-}
-
-#chList li .chNumber {
-  display: inline-block;
-  width: 50px;
-  text-align: right;
-  padding: 5px 30px 5px 0;
-}
-
-#chList li p {
-  vertical-align: middle;
-  display: inline-block;
 }
 
 .boxBook {
